@@ -13,7 +13,7 @@ public class StringShift {
 	    			lshifts -= shift[j][1];
 	    		}
 	    	}
-	    	System.out.println("Total shifts: " + lshifts);
+//	    	System.out.println("Total shifts: " + lshifts);
 	    	lshifts = lshifts % s.length();
 	    	if(lshifts < 0) {
 	    		s = shift(s, -lshifts, true);
@@ -28,7 +28,7 @@ public class StringShift {
 	    	int i = isRightShift ? n : max - n;
 	    	int end = isRightShift ? i - 1 : max - n - 1;
 	    	StringBuffer x = new StringBuffer();
-	    	System.out.printf("Looping from %d to %d, total %d\n", i, end, n);
+//	    	System.out.printf("Looping from %d to %d, total %d\n", i, end, n);
 	    	while(i != end) {
 	    		x.append(s.charAt(i));
 	    		i = (i + 1) % s.length();
