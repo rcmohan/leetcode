@@ -1,5 +1,7 @@
 package com.crajas.leetcode.thirtydays;
 
+import java.util.Arrays;
+
 public class BitwiseAND {
 
 	
@@ -30,25 +32,31 @@ public class BitwiseAND {
 	    public int rangeBitwiseAnd(int m, int n) {
 	    	if(m == n) return m;
 	    	
-	    	String m1 = Integer.toBinaryString(m);
-	    	String m2 = Integer.toBinaryString(n);
 	    	int x = 0;
-	    	if(n - m > 0 && m1.length() == m2.length()) {
-	    		int i = 0;
-	    		x = n;
-	    		StringBuffer s = new StringBuffer();
-	    		while (i < m1.length() && m1.charAt(i) == m2.charAt(i)) {
-	    			s.append(m1.charAt(i));
-	    			i++;
-	    		};
-	    		while(i < m1.length()) {
-	    			s.append("0");
-	    			i ++;
-	    		}
-	    		x = Integer.parseInt(s.toString(), 2);
+	    	
+	    	int[] mbits = new int[32];
+	    	int[] nbits = new int[32];
+	    	
+	    	int j = 0;
+	    	
+	    	while(n > 0 && m > 0) {
+	    		nbits[j] = n & 1;
+	    		mbits[j] = m & 1;
+	    		n >>= 1; m >>= 1;
+	    		j ++;
+	    	}
+	    	if (n == 0 && m == 0) {
+	    		while(j-- >= 0 && nbits[j] == mbits[j]) {
+    				x += nbits[j];
+    				x *= 2;
+    			} 
+	    		while(j-- > 0) {
+    				x *= 2;
+    			} 
 	    	}
 	        return x;
 	    }
+	    
 
 	}
 
