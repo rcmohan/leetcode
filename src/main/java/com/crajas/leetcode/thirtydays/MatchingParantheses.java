@@ -17,6 +17,7 @@ public class MatchingParantheses {
 	    		System.out.printf("%s, %s: %d, %d, %d, %s\n", s, c, lpar, rpar, ast, lpar + ast < rpar);
 	    		if(lpar + ast < rpar) return false; 
 	    	}
+    		System.out.printf("%s: %d, %d, %d, %s\n", s, lpar, rpar, ast, lpar + ast < rpar);
 	    	int diff = lpar - rpar;
 	    	System.out.printf("Finally: %s :  %d, %d", s, diff, ast);
 	    	if(diff == 0) {

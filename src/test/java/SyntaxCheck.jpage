@@ -1,0 +1,2 @@
+System.out.println(-20 % 5);
+System.out.println(-2 % 5);
