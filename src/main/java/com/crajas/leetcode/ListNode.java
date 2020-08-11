@@ -1,18 +1,26 @@
 package com.crajas.leetcode;
 
 public class ListNode {
-	int val;
-	ListNode next;
+	public int val;
+	public ListNode next;
 
-	ListNode(int x) {
+	public ListNode(int x) {
 		val = x;
+	}
+
+	ListNode() {
+	}
+
+	ListNode(int val, ListNode next) {
+		this.val = val;
+		this.next = next;
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder s = new StringBuilder();
 		ListNode node = this;
-		while(node != null) {
+		while (node != null) {
 			s.append(String.format("%d->", node.val));
 			node = node.next;
 		}

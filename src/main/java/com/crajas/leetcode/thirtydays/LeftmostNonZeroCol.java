@@ -4,11 +4,6 @@ import java.util.List;
 
 public class LeftmostNonZeroCol {
 
-	/**
-	 * // This is the BinaryMatrix's API interface.
-	 * // You should not implement it, or speculate about its implementation
-	 */
-
 	
 	class Solution {
 	    public int leftMostColumnWithOne(BinaryMatrix binaryMatrix) {
