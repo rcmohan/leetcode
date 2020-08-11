@@ -8,4 +8,5 @@ public interface BinaryMatrix {
 
 	int get(int i, int j);
 
+	void set(int[][] x);
 }

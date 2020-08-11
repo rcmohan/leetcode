@@ -36,8 +36,6 @@ public class ThreeSumZero {
 							trips.add(pn);
 							trips.add(x);
 //							res.add(trips);
-							trips.sort((a == b));
-							map.add(""+in+pn+)
 						}
 					}
 				}
