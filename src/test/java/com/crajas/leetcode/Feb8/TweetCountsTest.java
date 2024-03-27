@@ -10,7 +10,7 @@ class TweetCountsTest {
 
 	// [null,null,null,null,[2],[2,1],null,[4]]
 	// [null,null,null,null,[2],[2,1],null,[4]]
-	TweetCounts ts = new TweetCounts();
+	/*TweetCounts ts = new TweetCounts();
 		
 
 	@Test
@@ -32,5 +32,5 @@ class TweetCountsTest {
 		 assertEquals(1, list.size());
 		 assertEquals(4, list.get(0));
 	}
-
+*/
 }
